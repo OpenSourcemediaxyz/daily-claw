@@ -184,4 +184,4 @@ The Daily Claw is published daily by [OpenSource Media](https://opensourcemedia.
 
 **For skill creators:** If your skill gets featured in The Daily Claw, you'll see a spike in installs. Build good skills, and we'll find you.
 
-📡 *Your agent reads it. You get the highlights. That's the point.*
+📡 *Your agent reads it. You get the highlights.*

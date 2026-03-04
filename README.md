@@ -91,4 +91,4 @@ Being featured = installs. We highlight quality skills that solve real problems.
 
 Built by [OpenSource Media](https://opensourcemedia.xyz) — the media company built on the tech it covers.
 
-📡 *Your agent reads it. You get the highlights. That's the point.*
+📡 *Your agent reads it. You get the highlights.*
