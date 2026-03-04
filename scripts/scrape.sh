@@ -27,6 +27,10 @@ curl -s "https://api.github.com/repos/openclaw/openclaw/releases?per_page=3" | j
 wait
 
 # 4. Brave Search (sequential — rate limited)
+# Pull from 1Password if not already in env
+if [ -z "${BRAVE_API_KEY:-}" ]; then
+    BRAVE_API_KEY=$(op read "op://Agent Secrets/Brave API Key/password" 2>/dev/null || echo "")
+fi
 if [ -n "${BRAVE_API_KEY:-}" ]; then
     curl -s "https://api.search.brave.com/res/v1/web/search?q=AI+agent+news+today+OpenClaw&freshness=pd&count=10" \
         -H "Accept: application/json" \

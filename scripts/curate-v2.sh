@@ -73,6 +73,10 @@ echo "$HN_ITEMS" | jq '.' > "$RAW_DIR/hn-ai.json" 2>/dev/null || echo "[]" > "$R
 
 # 5. Brave Search — AI agent news
 echo "  → Brave Search: AI agent news..."
+# Pull from 1Password if not already in env
+if [ -z "${BRAVE_API_KEY:-}" ]; then
+    BRAVE_API_KEY=$(op read "op://Agent Secrets/Brave API Key/password" 2>/dev/null || echo "")
+fi
 if [ -n "${BRAVE_API_KEY:-}" ]; then
     curl -s "https://api.search.brave.com/res/v1/web/search?q=AI+agent+news+today&freshness=pd&count=10" \
         -H "Accept: application/json" \
