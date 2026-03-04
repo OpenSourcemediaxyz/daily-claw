@@ -43,7 +43,7 @@ this is worth having. Want me to install it?
 Also: DeepSeek V4 expected today/tomorrow. If it benchmarks well, could be 
 a strong local model option.
 
-— via The Daily Claw by OSM
+— via The Daily Claw 🦞
 ```
 
 ## Why This Exists

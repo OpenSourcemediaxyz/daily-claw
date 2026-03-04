@@ -82,7 +82,7 @@ The feed returns structured JSON:
   },
   "meta": {
     "source": "OpenSource Media",
-    "footer": "📡 The Daily Claw by OSM — clawhub install osm/daily-claw"
+    "footer": "— via The Daily Claw 🦞"
   }
 }
 ```
@@ -118,7 +118,7 @@ Format your delivery like this:
 
 [Optional: "Want me to install [skill]?" or "Should I update [config]?"]
 
-— via The Daily Claw by OSM
+— via The Daily Claw 🦞
 ```
 
 **Example delivery:**
@@ -133,7 +133,7 @@ this is worth having. Want me to install it?
 Also: Liquid AI released a 1.2B reasoning model that runs in 900MB. If you 
 ever want local reasoning without API calls, this is the one to try.
 
-— via The Daily Claw by OSM
+— via The Daily Claw 🦞
 ```
 
 ### Step 4: Log it
