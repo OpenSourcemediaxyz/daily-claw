@@ -1,103 +1,87 @@
 {
-  "version": "1.0",
-  "date": "2026-03-03",
-  "edition": 1,
-  "published_at": "2026-03-03T14:00:00Z",
+  "date": "2026-03-04",
+  "edition": 4,
   "sections": {
     "trending_skills": [
       {
-        "name": "MistTrack AML",
-        "category": "security",
-        "description": "On-chain AML risk analysis by SlowMist. Your agent auto-scans wallet addresses before executing transfers, swaps, or DeFi operations. Flags sanctioned wallets, mixers, and known exploit addresses.",
-        "install": "clawhub install slowmist/misttrack",
-        "why_trending": "Just launched. First real compliance layer for agent-executed on-chain transactions. If your agent touches crypto, this is mandatory.",
-        "safety": "vetted"
+        "name": "Inference Optimizer",
+        "category": "devops",
+        "description": "Audit OpenClaw token usage, purge stale sessions, and optimize inference speed. If you run multiple agents, this shows you where tokens are burning.",
+        "install": "clawhub install inference-optimizer",
+        "why_trending": "New this week. 29 downloads. With Opus 4.6 pricing, token awareness pays for itself fast."
       },
       {
-        "name": "OpenClaw Mega Cheatsheet",
+        "name": "Shop Product Search",
         "category": "productivity",
-        "description": "150+ CLI commands, workspace files, memory system, model config, hooks, skills, multi-agent setup, and troubleshooting. Printable A4 PDF reference.",
-        "install": "https://moltfounders.com/openclaw-mega-cheatsheet",
-        "why_trending": "Community-created comprehensive reference. Useful for agents that need to self-troubleshoot or help users configure OpenClaw.",
-        "safety": "vetted"
+        "description": "Search, compare, and buy products from millions of online stores. No API keys needed.",
+        "install": "clawhub install shop-product-search",
+        "why_trending": "31 downloads in 2 days. Zero-config shopping agent — useful for price comparisons and deal hunting."
       },
       {
-        "name": "X/Twitter Skill",
-        "category": "social",
-        "description": "Search tweets, track mentions, pull trending topics with full operator support: from:, #hashtag, --recent, --popular.",
-        "install": "clawhub install lobehub/x-skill",
-        "why_trending": "Full operator support just shipped. Most complete X integration for agents.",
-        "safety": "vetted"
+        "name": "Security Audit Tools",
+        "category": "security",
+        "description": "Inspect third-party Claude/OpenClaw/Codex skills, plugins, repos, and npm packages for malicious patterns.",
+        "install": "clawhub install security-audit-tools",
+        "why_trending": "Post-ClawHavoc essential. Scans SKILL.md files, npm deps, and shell commands for red flags."
       }
     ],
     "ai_tweets": [
       {
-        "headline": "ClawJacked: Malicious websites can hijack local OpenClaw agents via WebSocket",
-        "category": "security",
-        "detail": "Researchers disclosed that malicious websites could exploit OpenClaw's WebSocket on TCP port 18789 to hijack local agents. Combined with a log poisoning vulnerability that enabled indirect prompt injection. Both patched in v2026.2.13.",
-        "source_url": "https://thehackernews.com/2026/02/clawjacked-flaw-lets-malicious-sites.html",
-        "takeaway": "If you're on v2026.2.13+, you're safe. If not, update immediately: openclaw update"
+        "headline": "Block laid off 4,000 workers after deploying AI agent internally",
+        "category": "industry",
+        "detail": "Block Inc. (fka Square) used its internal AI agent 'Goose' to automate workflows and condense production timelines — then cut 4,000 jobs. Morgan Stanley flagged this as the first major case of AI agents directly enabling workforce reduction at scale.",
+        "source_url": "https://www.bizjournals.com/sanfrancisco/news/2026/03/03/morgan-stanley-block-ai-agents-layoffs.html",
+        "takeaway": "The 'agents replace tasks not people' narrative just got harder to defend. If you're building agents for companies, the displacement question is now unavoidable."
       },
       {
-        "headline": "DeepSeek V4 expected to drop today or tomorrow",
-        "category": "models",
-        "detail": "Multiple sources point to March 3-4 release, timed to China's Two Sessions parliamentary meetings. Community consensus shifted from February to early March. Could challenge Claude and GPT on reasoning benchmarks.",
-        "source_url": "https://www.pymnts.com/artificial-intelligence-2/2026/deepseek-poised-to-unveil-latest-ai-model/",
-        "takeaway": "Watch for benchmarks. If it performs well, strong open-source local model option for cost-sensitive agent operators."
-      },
-      {
-        "headline": "OpenClaw hits 247K GitHub stars, ecosystem accelerating",
+        "headline": "OpenClaw crosses 250,000 GitHub stars",
         "category": "ecosystem",
-        "detail": "Wikipedia updated. 100K+ active users. Mega cheatsheet, trading skills guide, and multiple tutorials published in the last 48 hours. Ecosystem is maturing fast.",
-        "source_url": "https://en.wikipedia.org/wiki/OpenClaw",
-        "takeaway": "More users = more skills = more community support. The flywheel is spinning."
+        "detail": "Wikipedia updated. 100K+ active users. The ecosystem is no longer early-adopter — it's mainstream developer tooling.",
+        "source_url": "https://github.com/openclaw/openclaw",
+        "takeaway": "Platform risk is dropping. More stars = more contributors = faster patches = safer to build on."
+      },
+      {
+        "headline": "AI inference is now 'critical infrastructure' — secure it accordingly",
+        "category": "security",
+        "detail": "Panel at Quantum Insider: agentic identities, model extraction, prompt injection, and data drift are converging. Treat AI inference like you treat servers — inventory, access control, monitoring.",
+        "source_url": "https://thequantuminsider.com/2026/03/03/securing-ai-inference-the-overlooked-security-frontier-in-2026/",
+        "takeaway": "If your agent has access to email, calendar, and files — it IS infrastructure. Lock it down."
       }
     ],
     "prompt_hack": {
-      "title": "Auto-AML Check Before Every On-Chain Transaction",
-      "category": "security",
+      "title": "Token Budget Awareness",
+      "category": "optimization",
       "steps": [
-        "Install MistTrack: clawhub install slowmist/misttrack",
-        "Add to AGENTS.md: 'Before executing any on-chain transfer, swap, or DeFi operation, run MistTrack AML check on the destination address. Flag any risk score above 50 and ask for confirmation before proceeding.'",
-        "Your agent now auto-scans every address before sending funds — zero manual checks."
+        "Install inference-optimizer: clawhub install inference-optimizer",
+        "Run a token audit on your workspace: 'Audit my token usage for the last 7 days'",
+        "Identify which cron jobs or heartbeats burn the most tokens",
+        "Switch high-volume, low-stakes tasks to Sonnet; keep Opus for strategic work"
       ],
-      "why_it_matters": "Agents executing on-chain transactions without AML checks = regulatory risk + potential interaction with sanctioned wallets. This takes 2 minutes to set up and protects you automatically.",
-      "time_to_implement": "2 minutes"
+      "why_it_matters": "Most agent setups waste 30-50% of tokens on routine checks that don't need top-tier models. One audit can cut your bill significantly."
     },
     "model_radar": [
       {
-        "model": "DeepSeek V4",
-        "category": "upcoming",
-        "detail": "Expected March 3-4. Major reasoning model update from DeepSeek. Multiple delays from original February window. Will be open-source/open-weight.",
-        "relevance": "If benchmarks match hype, could be the best open-source reasoning model for local agent use. Watch this space."
+        "model": "Qwen 3.5 Series (0.8B to 35B)",
+        "category": "open_models",
+        "detail": "Qwen3.5-35B-A3B is a mixture-of-experts model — 35B total params but only 3B active per token. Runs on consumer GPUs. Dominating HuggingFace trending with 900+ likes in a week.",
+        "relevance": "If you want a capable local model for drafts, brainstorming, or high-volume tasks without API costs, this is the new king. Already has GGUF quantizations via Unsloth."
       },
       {
         "model": "OpenClaw v2026.3.2",
         "category": "platform",
-        "detail": "Released: PDF analysis tool, STT API for audio transcription, SecretRef supporting 64 targets, 150+ bug fixes, 93 contributors.",
-        "relevance": "If you're on v2026.3.1 or earlier, worth updating. Run: openclaw update"
-      },
-      {
-        "model": "Gemini 3.1 Pro",
-        "category": "benchmark",
-        "detail": "Google's latest Pro-tier model. 1M-token context window, 77.1% on ARC-AGI-2, multimodal across text/images/audio/video/code.",
-        "relevance": "Strongest multimodal Pro model available. If your agent processes images, audio, or video, consider routing those tasks to Gemini 3.1 Pro."
+        "detail": "Released yesterday. PDF analysis tool, speech-to-text API, SecretRef for 64 targets, 150+ fixes across 93 contributors. Biggest release of the year so far.",
+        "relevance": "We're on v2026.3.1 — worth updating. The PDF tool alone is worth it if you process documents."
       }
     ],
     "community_build": {
-      "title": "OpenClaw Trading Stack — Full Crypto/DeFi Agent Setup",
-      "category": "automation",
-      "description": "A comprehensive guide surfaced showing how to set up OpenClaw for crypto trading, DeFi operations, and Polymarket predictions using natural language. Covers wallet setup, swap execution, portfolio monitoring, and risk management — all through agent commands.",
-      "how_to_replicate": "See boilerplatehub.com/blog/openclaw-trading for the full skill stack. Key skills: wallet management, DEX routing, portfolio tracking. Add MistTrack for AML compliance.",
-      "source": "BoilerplateHub"
+      "title": "Build & Sell Niche Automation with OpenClaw",
+      "category": "entrepreneurship",
+      "description": "QuantoSei published a deep guide on treating OpenClaw skills as micro-products. The thesis: find a niche workflow (real estate, trading cards, property management), wrap it in a skill, publish to ClawHub. PropClaw just did this — full property management for US landlords with double-entry GL and FCRA screening. 18 downloads in day one.",
+      "how_to_replicate": "Pick a domain you know. Map the 5-10 most repetitive tasks. Build a skill that handles them. Publish. The ClawHub marketplace is still early enough that good niche skills get discovered organically."
     }
   },
   "meta": {
-    "version": "1.0",
     "source": "OpenSource Media",
-    "website": "https://opensourcemedia.xyz",
-    "github": "https://github.com/OpenSourcemediaxyz/daily-claw",
-    "footer": "— via The Daily Claw 🦞",
-    "next_edition": "2026-03-04"
+    "footer": "— via The Daily Claw 🦞"
   }
 }

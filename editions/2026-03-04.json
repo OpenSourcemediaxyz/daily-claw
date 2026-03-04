@@ -1,97 +1,87 @@
 {
-  "version": "1.0",
   "date": "2026-03-04",
-  "edition": 2,
-  "published_at": "2026-03-04T14:00:00Z",
+  "edition": 4,
   "sections": {
     "trending_skills": [
       {
-        "name": "NanoClaw",
-        "category": "infrastructure",
-        "description": "Run OpenClaw agents inside containers. Isolation, reproducibility, and easy deployment. Built by a solo dev with Claude Code — Andrej Karpathy noticed it and called OpenClaw 'the orchestration layer for agents.'",
-        "install": "See github.com/nanoclaw — container-based setup",
-        "why_trending": "Karpathy signal-boosted it. Solves the 'my agent broke my system' problem with proper sandboxing. The Register covered it.",
-        "safety": "vetted"
+        "name": "Inference Optimizer",
+        "category": "devops",
+        "description": "Audit OpenClaw token usage, purge stale sessions, and optimize inference speed. If you run multiple agents, this shows you where tokens are burning.",
+        "install": "clawhub install inference-optimizer",
+        "why_trending": "New this week. 29 downloads. With Opus 4.6 pricing, token awareness pays for itself fast."
       },
       {
-        "name": "Deterministic Multi-Agent Pipeline",
-        "category": "dev_tools",
-        "description": "External event bus (Redis Streams/NATS) for agent routing + state machine engine + worker pool control. Turns OpenClaw into a deterministic dev pipeline instead of unpredictable chat.",
-        "install": "github.com/ggondim — lobster integration",
-        "why_trending": "First serious attempt at making multi-agent workflows deterministic. Published on DEV Community with full architecture.",
-        "safety": "vetted"
-      },
-      {
-        "name": "Every.to Agent Setup Guide",
+        "name": "Shop Product Search",
         "category": "productivity",
-        "description": "Comprehensive walkthrough for setting up agents that run 24/7. Demos, workflows, and hard-won lessons from an experienced builder. Not a skill — a reference guide.",
-        "install": "https://every.to/source-code/openclaw-setting-up-your-first-personal-ai-agent",
-        "why_trending": "Every.to published it yesterday. Best beginner-to-intermediate guide we've seen. Good for recommending to friends who ask 'what's OpenClaw?'",
-        "safety": "vetted"
+        "description": "Search, compare, and buy products from millions of online stores. No API keys needed.",
+        "install": "clawhub install shop-product-search",
+        "why_trending": "31 downloads in 2 days. Zero-config shopping agent — useful for price comparisons and deal hunting."
+      },
+      {
+        "name": "Security Audit Tools",
+        "category": "security",
+        "description": "Inspect third-party Claude/OpenClaw/Codex skills, plugins, repos, and npm packages for malicious patterns.",
+        "install": "clawhub install security-audit-tools",
+        "why_trending": "Post-ClawHavoc essential. Scans SKILL.md files, npm deps, and shell commands for red flags."
       }
     ],
     "ai_tweets": [
       {
-        "headline": "Karpathy calls OpenClaw 'the orchestration layer for agents'",
+        "headline": "Block laid off 4,000 workers after deploying AI agent internally",
+        "category": "industry",
+        "detail": "Block Inc. (fka Square) used its internal AI agent 'Goose' to automate workflows and condense production timelines — then cut 4,000 jobs. Morgan Stanley flagged this as the first major case of AI agents directly enabling workforce reduction at scale.",
+        "source_url": "https://www.bizjournals.com/sanfrancisco/news/2026/03/03/morgan-stanley-block-ai-agents-layoffs.html",
+        "takeaway": "The 'agents replace tasks not people' narrative just got harder to defend. If you're building agents for companies, the displacement question is now unavoidable."
+      },
+      {
+        "headline": "OpenClaw crosses 250,000 GitHub stars",
         "category": "ecosystem",
-        "detail": "Andrej Karpathy weighed in on the agent framework landscape, positioning OpenClaw and similar 'claws' as the orchestration layer — not the models, not the apps, but the glue between them. This is a significant framing from one of AI's most respected voices.",
-        "source_url": "https://www.theregister.com/2026/03/01/nanoclaw_container_openclaw/",
-        "takeaway": "Validates the thesis that agent orchestration (not models) is the real value layer. If you're building on OpenClaw, you're building on infrastructure, not hype."
+        "detail": "Wikipedia updated. 100K+ active users. The ecosystem is no longer early-adopter — it's mainstream developer tooling.",
+        "source_url": "https://github.com/openclaw/openclaw",
+        "takeaway": "Platform risk is dropping. More stars = more contributors = faster patches = safer to build on."
       },
       {
-        "headline": "n8n publishes 15 production AI agent examples",
-        "category": "use_case",
-        "detail": "n8n (workflow automation platform) published 15 real-world AI agent patterns: Discord chatbots, educational AI, lead routing, data sync. All with node-based visual workflows.",
-        "source_url": "https://blog.n8n.io/ai-agents-examples/",
-        "takeaway": "If you want visual workflow design for agent tasks, n8n is worth exploring. OpenClaw handles the agent; n8n handles the workflow routing."
-      },
-      {
-        "headline": "Reddit consensus: modular event-driven automations still winning in 2026",
-        "category": "use_case",
-        "detail": "r/AiAutomations thread: 'What's actually working?' Top answers: simple trigger→action patterns, lead routing, AI triage, clean data sync. Complex multi-agent chains still fragile in production.",
-        "source_url": "https://www.reddit.com/r/AiAutomations/comments/1rfm2c6/",
-        "takeaway": "Keep it simple. Single-agent + good triggers beats multi-agent complexity for most real use cases."
+        "headline": "AI inference is now 'critical infrastructure' — secure it accordingly",
+        "category": "security",
+        "detail": "Panel at Quantum Insider: agentic identities, model extraction, prompt injection, and data drift are converging. Treat AI inference like you treat servers — inventory, access control, monitoring.",
+        "source_url": "https://thequantuminsider.com/2026/03/03/securing-ai-inference-the-overlooked-security-frontier-in-2026/",
+        "takeaway": "If your agent has access to email, calendar, and files — it IS infrastructure. Lock it down."
       }
     ],
     "prompt_hack": {
-      "title": "The 'Proactive Agent' Pattern — Stop Waiting to Be Asked",
-      "category": "productivity",
+      "title": "Token Budget Awareness",
+      "category": "optimization",
       "steps": [
-        "Add to AGENTS.md: 'During heartbeats, check: (1) unread emails, (2) calendar next 24h, (3) any file changes in ~/projects/. If anything needs attention, surface it. If not, reply HEARTBEAT_OK.'",
-        "Set heartbeat interval to 30 minutes in your OpenClaw config.",
-        "Your agent now checks your world every 30 minutes and only pings you when something actually matters."
+        "Install inference-optimizer: clawhub install inference-optimizer",
+        "Run a token audit on your workspace: 'Audit my token usage for the last 7 days'",
+        "Identify which cron jobs or heartbeats burn the most tokens",
+        "Switch high-volume, low-stakes tasks to Sonnet; keep Opus for strategic work"
       ],
-      "why_it_matters": "Most agents sit idle until asked. A proactive agent catches the email you missed, reminds you about the meeting in 2 hours, and flags the git conflict before it blocks you. This is the difference between a tool and a partner.",
-      "time_to_implement": "3 minutes"
+      "why_it_matters": "Most agent setups waste 30-50% of tokens on routine checks that don't need top-tier models. One audit can cut your bill significantly."
     },
     "model_radar": [
       {
-        "model": "DeepSeek V4",
-        "category": "watch",
-        "detail": "Still expected imminently. China's Two Sessions started today (March 4). Multiple signals point to announcement timing around this event. No official release yet as of publish time.",
-        "relevance": "Keep watching. When it drops, we'll cover benchmarks in the next edition."
+        "model": "Qwen 3.5 Series (0.8B to 35B)",
+        "category": "open_models",
+        "detail": "Qwen3.5-35B-A3B is a mixture-of-experts model — 35B total params but only 3B active per token. Runs on consumer GPUs. Dominating HuggingFace trending with 900+ likes in a week.",
+        "relevance": "If you want a capable local model for drafts, brainstorming, or high-volume tasks without API costs, this is the new king. Already has GGUF quantizations via Unsloth."
       },
       {
-        "model": "Claude Opus 4.6",
-        "category": "benchmark",
-        "detail": "IntuitionLabs' 2026 enterprise comparison scored Opus 4.6 highest on code and specialized benchmarks (Terminal-Bench). Confirmed as the top choice for agentic coding tasks.",
-        "relevance": "If your agent does heavy coding or file manipulation, Opus 4.6 remains the best option. Worth the premium over Sonnet for complex tasks."
+        "model": "OpenClaw v2026.3.2",
+        "category": "platform",
+        "detail": "Released yesterday. PDF analysis tool, speech-to-text API, SecretRef for 64 targets, 150+ fixes across 93 contributors. Biggest release of the year so far.",
+        "relevance": "We're on v2026.3.1 — worth updating. The PDF tool alone is worth it if you process documents."
       }
     ],
     "community_build": {
-      "title": "Deterministic Dev Pipeline — Multi-Agent Without the Chaos",
-      "category": "multi_agent",
-      "description": "A developer built an external orchestration layer for OpenClaw using Redis Streams as an event bus, a state machine engine per project, and a worker spawner with pool control. The result: deterministic multi-agent workflows where each agent has a defined role and handoff protocol. No more unpredictable agent chains.",
-      "how_to_replicate": "Core architecture: OpenClaw handles I/O (messaging + execution), Redis Streams handles routing, state machine defines the workflow steps. Full writeup: dev.to/ggondim",
-      "source": "DEV Community"
+      "title": "Build & Sell Niche Automation with OpenClaw",
+      "category": "entrepreneurship",
+      "description": "QuantoSei published a deep guide on treating OpenClaw skills as micro-products. The thesis: find a niche workflow (real estate, trading cards, property management), wrap it in a skill, publish to ClawHub. PropClaw just did this — full property management for US landlords with double-entry GL and FCRA screening. 18 downloads in day one.",
+      "how_to_replicate": "Pick a domain you know. Map the 5-10 most repetitive tasks. Build a skill that handles them. Publish. The ClawHub marketplace is still early enough that good niche skills get discovered organically."
     }
   },
   "meta": {
-    "version": "1.0",
     "source": "OpenSource Media",
-    "website": "https://opensourcemedia.xyz",
-    "github": "https://github.com/OpenSourcemediaxyz/daily-claw",
-    "footer": "— via The Daily Claw 🦞",
-    "next_edition": "2026-03-05"
+    "footer": "— via The Daily Claw 🦞"
   }
 }
