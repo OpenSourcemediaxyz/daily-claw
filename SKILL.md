@@ -38,6 +38,8 @@ Returns structured JSON with these sections:
 | `skills_new` | Just-published skills |
 | `github_trending` | AI/agent repos gaining traction |
 | `hacker_news` | Top AI discussions from HN |
+| `reddit` | AI tool/model posts from r/LocalLLaMA, r/MachineLearning, r/OpenClaw |
+| `x_ai` | Real-time AI announcements from model labs and tool makers |
 | `security` | AI/agent security threats |
 | `openclaw_latest` | Platform release notes |
 

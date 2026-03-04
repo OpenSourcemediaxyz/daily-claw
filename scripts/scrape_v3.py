@@ -304,7 +304,7 @@ def scrape_x_profiles():
     auth_token = os.environ.get('X_AUTH_TOKEN', '')
     ct0_token = os.environ.get('X_CT0', '')
     
-    profiles = ["OpenClawCode", "AnthropicAI", "defidevcorp"]
+    profiles = ["AnthropicAI", "OpenAI", "huggingface", "LangChainAI", "OpenClawCode"]
     tweets = []
     
     for handle in profiles:
@@ -384,7 +384,7 @@ def scrape_x_search_authenticated():
     if not auth_token or not ct0_token:
         return {"error": "X cookies not configured", "hint": "Set X_AUTH_TOKEN and X_CT0 env vars"}
     
-    queries = ["AI agent framework", "OpenClaw", "LLM agent tool"]
+    queries = ["new model release AI", "open source LLM launch", "AI agent framework"]
     all_tweets = []
     
     for query in queries:
@@ -477,14 +477,20 @@ def main():
     
     # Layer 2: New sources
     print("\n=== LAYER 2: New Sources ===")
-    # reddit removed — low signal for daily skill feed
+    save("reddit", scrape_reddit())
     save("hackernews", scrape_hackernews())
     save("github-trending", scrape_github_trending())
     save("security", scrape_security())
     
-    # Layer 3: X/Twitter — disabled for now (not in scope for AI updates feed)
-    # save("x-profiles", scrape_x_profiles())
-    # save("x-search", scrape_x_search_authenticated())
+    # Layer 3: X/Twitter — AI-focused queries
+    print("\n=== LAYER 3: X/Twitter ===")
+    save("x-profiles", scrape_x_profiles())
+    
+    auth_token = os.environ.get('X_AUTH_TOKEN', '')
+    if auth_token:
+        save("x-search", scrape_x_search_authenticated())
+    else:
+        print("  ⏭️  X auth not configured, skipping authenticated search")
     
     # Metadata
     save("meta", {
