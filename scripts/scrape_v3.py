@@ -427,12 +427,15 @@ def scrape_x_search_authenticated():
                                 result = entry['content']['itemContent']['tweet_results']['result']
                                 legacy = result.get('legacy') or result.get('tweet',{}).get('legacy',{})
                                 core = result.get('core') or result.get('tweet',{}).get('core',{})
-                                user_legacy = core.get('user_results',{}).get('result',{}).get('legacy',{})
+                                user_result = core.get('user_results',{}).get('result',{})
+                                # X nests screen_name under result.core (not result.legacy)
+                                user_core = user_result.get('core', {})
+                                user_legacy = user_result.get('legacy', {})
                                 
                                 all_tweets.append({
                                     "query": query,
-                                    "handle": user_legacy.get('screen_name', '?'),
-                                    "name": user_legacy.get('name', '?'),
+                                    "handle": user_core.get('screen_name') or user_legacy.get('screen_name', '?'),
+                                    "name": user_core.get('name') or user_legacy.get('name', '?'),
                                     "text": legacy.get('full_text', '')[:280],
                                     "likes": legacy.get('favorite_count', 0),
                                     "retweets": legacy.get('retweet_count', 0),
