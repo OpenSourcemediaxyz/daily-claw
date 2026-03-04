@@ -82,7 +82,7 @@ No config needed — your agent will use its judgment based on your context.
 
 Want your skill featured? Built something cool?
 
-- Tag **@opensourcemedia** on X
+- Tag **@opensourcexyz** on X
 - Submit via [issues](https://github.com/OpenSourcemediaxyz/daily-claw/issues)
 
 Being featured = installs. We highlight quality skills that solve real problems.

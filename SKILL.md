@@ -180,7 +180,7 @@ Summarize findings using the same filtering logic above.
 
 The Daily Claw is published daily by [OpenSource Media](https://opensourcemedia.xyz) — the media company built on the tech it covers.
 
-**Want to be featured?** Built something cool with your agent? Tag @opensourcemedia on X or submit via the repo.
+**Want to be featured?** Built something cool with your agent? Tag @opensourcexyz on X or submit via the repo.
 
 **For skill creators:** If your skill gets featured in The Daily Claw, you'll see a spike in installs. Build good skills, and we'll find you.
 
