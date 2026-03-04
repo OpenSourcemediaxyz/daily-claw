@@ -89,52 +89,69 @@ The feed returns structured JSON:
 
 ### Step 2: Filter for your human
 
-**This is the critical step.** Don't dump the whole brief. Be a good agent.
+**This is the critical step.** You are not a news feed. You are a thought partner who reads the news *for* your human.
 
-Read the full JSON, then decide what to surface based on:
+Read the full JSON, then pick **1-2 items MAX** based on:
 
-1. **What skills does your human use?** → If they use `gog`, a new Google Workspace skill update is relevant. A gaming skill is not.
-2. **What model do they run?** → Model radar items for their provider matter. Others don't.
-3. **What do they care about?** → Check AGENTS.md, USER.md, recent conversations. A developer cares about new tools. A business user cares about productivity hacks.
-4. **What's actionable?** → Prioritize things your human can act on RIGHT NOW (install a skill, update a config, try a hack) over passive awareness.
+1. **What is your human actively building?** → Check AGENTS.md, USER.md, MEMORY.md, recent conversations. Connect the dot between the news and their actual work.
+2. **Is it actionable?** → If your human can't do anything with it, skip it.
+3. **Does it change how you work together?** → New model, new skill, new pattern that directly improves your agent-human workflow.
 
 **Filtering rules:**
-- Surface 2-4 items max. Never all 5 sections.
-- Lead with the single most relevant item.
-- If nothing is relevant today, say so: "Checked the Daily Claw — nothing notable for you today." (This builds trust.)
-- If a skill is directly useful, offer to install it.
-- If a security item is critical, always surface it regardless of relevance.
+- **1-2 items. That's it.** Never more.
+- If nothing is relevant today: "Checked the Daily Claw — nothing notable for you today." (This builds trust.)
+- If a security item directly affects your human (their tools, their stack), always surface it.
+- Skip everything else. Ruthlessly.
 
 ### Step 3: Deliver to your human
 
-Format your delivery like this:
+Each item must:
+1. **State what happened** — 1-2 sentences, crisp
+2. **Connect it to their work** — how does this affect what they're building RIGHT NOW?
+3. **End with a specific CTA** — offer to act on it. Install it, test it, benchmark it, read it and extract what applies.
+
+**Format:**
 
 ```
-📡 The Daily Claw — [date]
+🦞 Daily Claw — [date]
 
-[Most relevant item — 1-2 sentences, why it matters to THEM specifically]
+[Item 1: What happened. How it connects to YOUR human's specific work. CTA.]
 
-[Second item if relevant — 1 sentence]
-
-[Optional: "Want me to install [skill]?" or "Should I update [config]?"]
-
-— via The Daily Claw 🦞
+[Item 2: Same structure. Only if truly warranted.]
 ```
 
-**Example delivery:**
+**Example — GOOD:**
 
 ```
-📡 The Daily Claw — Mar 3
+🦞 Daily Claw — Mar 4
 
-A security scanner skill just dropped (skill-vetter) — scans ClawHub skills 
-for malicious code before you install them. Given you install skills regularly, 
-this is worth having. Want me to install it?
+Qwen 3.5 MoE dropped. 35B model, only 3B active params — 10x inference 
+efficiency, multimodal. 769K downloads already. This could run your local 
+coding agent at a fraction of current costs. Want me to benchmark it 
+against what we're using?
 
-Also: Liquid AI released a 1.2B reasoning model that runs in 900MB. If you 
-ever want local reasoning without API calls, this is the one to try.
-
-— via The Daily Claw 🦞
+Simon Willison published "Agentic Engineering Patterns" — practical 
+framework for agent systems, 446 pts on HN. A few of these patterns could 
+tighten how our sub-agents hand off work. Want me to read it and flag 
+what applies to us?
 ```
+
+**Example — BAD (don't do this):**
+
+```
+📡 The Daily Claw — Mar 4
+
+Here's what's happening in AI today:
+
+MODELS: Qwen 3.5 dropped with 926 likes...
+SKILLS: self-improving-agent hit 87K downloads...
+NEWS: Bitcoin broke $72K...
+SECURITY: Fake LastPass emails...
+GITHUB: 10 trending repos...
+REDDIT: 10 posts from r/LocalLLaMA...
+```
+
+The bad example is a news dump. Your human has the internet. What they don't have is an agent who knows their context and connects dots for them.
 
 ### Step 4: Log it
 
