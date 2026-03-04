@@ -473,24 +473,18 @@ def main():
     
     save("hf-trending", scrape_huggingface())
     save("openclaw-releases", scrape_openclaw_releases())
-    save("news-headlines", scrape_news_sites())
+    # news-headlines removed — not in scope (AI updates only, not crypto/general news)
     
     # Layer 2: New sources
     print("\n=== LAYER 2: New Sources ===")
-    save("reddit", scrape_reddit())
+    # reddit removed — low signal for daily skill feed
     save("hackernews", scrape_hackernews())
     save("github-trending", scrape_github_trending())
     save("security", scrape_security())
     
-    # Layer 3: X/Twitter
-    print("\n=== LAYER 3: X/Twitter ===")
-    save("x-profiles", scrape_x_profiles())
-    
-    auth_token = os.environ.get('X_AUTH_TOKEN', '')
-    if auth_token:
-        save("x-search", scrape_x_search_authenticated())
-    else:
-        print("  ⏭️  X auth not configured, skipping authenticated search")
+    # Layer 3: X/Twitter — disabled for now (not in scope for AI updates feed)
+    # save("x-profiles", scrape_x_profiles())
+    # save("x-search", scrape_x_search_authenticated())
     
     # Metadata
     save("meta", {
