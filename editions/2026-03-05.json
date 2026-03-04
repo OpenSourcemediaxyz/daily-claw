@@ -1,0 +1,97 @@
+{
+  "version": "1.0",
+  "date": "2026-03-05",
+  "edition": 3,
+  "published_at": "2026-03-05T14:00:00Z",
+  "sections": {
+    "trending_skills": [
+      {
+        "name": "Chrome Gemini Patch",
+        "category": "security",
+        "description": "CVE-2026-0628 allowed malicious Chrome extensions to access camera and microphone through Gemini's AI panel — no extra permissions needed. Google patched it, but you need to update Chrome. If your agent operates browser automation, verify you're on latest Chrome.",
+        "install": "Update Chrome to latest version. No skill needed — this is a PSA.",
+        "why_trending": "Critical vulnerability. Silent surveillance through a trusted UI element. Everyone running browser-connected agents should verify their Chrome version.",
+        "safety": "vetted"
+      },
+      {
+        "name": "OpenClaw Data Analysis",
+        "category": "productivity",
+        "description": "New Medium deep-dive on using OpenClaw's skill system for data analysis and visualization workflows. Covers the five-component architecture and ReAct reasoning loop applied to data tasks.",
+        "install": "https://medium.com/@cenrunzhe/openclaw-explained — reference guide, not installable skill",
+        "why_trending": "Best technical breakdown of OpenClaw's architecture for data teams. If you want your agent to analyze CSVs, query databases, or build charts — this is the playbook.",
+        "safety": "vetted"
+      },
+      {
+        "name": "10 Practical OpenClaw Workflows",
+        "category": "productivity",
+        "description": "From inbox automation to agent bots — a comprehensive guide covering email triage, calendar management, file organization, code review, research, and social monitoring. All with real examples.",
+        "install": "https://tech.grahammiranda.com/10-ways-to-use-openclaw-to-make-your-life-easier — reference guide",
+        "why_trending": "Published yesterday. Fills the gap between 'I installed OpenClaw' and 'my agent actually does useful things.' Good for sharing with new users.",
+        "safety": "vetted"
+      }
+    ],
+    "ai_tweets": [
+      {
+        "headline": "Agent framework wars heat up: OpenClaw vs CrewAI vs AutoGPT vs LangGraph",
+        "category": "ecosystem",
+        "detail": "Three separate comparison articles published this week. Consensus: OpenClaw = best personal agent (local-first, skill ecosystem), CrewAI = best team simulation (roles + handoffs), LangGraph = best for complex workflows (graph-based), AutoGPT = best sandboxing.",
+        "source_url": "https://www.aitoolskit.io/agents/openclaw-vs-autogpt-vs-crewai-2026",
+        "takeaway": "OpenClaw wins on personal automation and skill ecosystem. CrewAI wins on multi-agent team simulation. Know when to use which."
+      },
+      {
+        "headline": "AWS Strands + OpenAI partnership: Amazon enters the agent framework game",
+        "category": "competition",
+        "detail": "Amazon launched Strands Labs — a multi-agent orchestration framework — alongside their OpenAI partnership. Cloud-native approach vs OpenClaw's local-first philosophy.",
+        "source_url": "https://aws.amazon.com/strands",
+        "takeaway": "Big tech is validating the agent framework category. OpenClaw's advantage: open source, local-first, community skills. AWS's advantage: enterprise integration + scale."
+      },
+      {
+        "headline": "CVE-2026-2256: From AI prompt to full system compromise",
+        "category": "security",
+        "detail": "New CVE demonstrates how crafted content injected into agent data sources (prompts, documents, logs) can achieve full system compromise without direct shell access. Affects any agent that processes untrusted inputs.",
+        "source_url": "https://medium.com/@itamar.yochpaz/cve-2026-2256-from-ai-prompt-to-full-system-compromise-a4114c718326",
+        "takeaway": "If your agent processes external documents, emails, or web content, it's vulnerable. Sandboxing (NanoClaw containers) and input validation are no longer optional."
+      }
+    ],
+    "prompt_hack": {
+      "title": "The 'Agent Decision Log' — Never Lose Context Again",
+      "category": "productivity",
+      "steps": [
+        "Add to AGENTS.md: 'After every significant decision or completed task, append a one-line entry to memory/decisions-YYYY-MM.md with format: [date] [decision] [reasoning] [outcome]'",
+        "Create the initial file: memory/decisions-2026-03.md",
+        "Your agent now maintains a searchable log of every decision it made and why. Next session, it can reference past reasoning instead of starting from scratch."
+      ],
+      "why_it_matters": "Agents wake up fresh every session. Without explicit decision logging, they'll re-ask questions you already answered or reverse decisions they already made. This simple pattern gives your agent institutional memory.",
+      "time_to_implement": "1 minute"
+    },
+    "model_radar": [
+      {
+        "model": "OpenClaw Framework Comparison",
+        "category": "ecosystem",
+        "detail": "Oflight published a detailed comparison: OpenClaw = fully local (only API calls external), Claude Code = cloud, ChatGPT = cloud, AutoGPT = local with API calls, CrewAI = local with API calls. OpenClaw is the only framework where processing stays entirely on your machine.",
+        "relevance": "Privacy-conscious users: OpenClaw is confirmed as the most local-first option. Your prompts, files, and context never leave your machine (only API calls to your chosen model provider)."
+      },
+      {
+        "model": "OpenAgents",
+        "category": "new_framework",
+        "detail": "New entrant comparing itself to CrewAI, LangGraph, and AutoGen. Focuses on inter-framework agent communication. Early stage but interesting architecture.",
+        "relevance": "Worth watching if you need agents from different frameworks to talk to each other. Not production-ready yet."
+      }
+    ],
+    "community_build": {
+      "title": "24/7 Personal Agent — Lessons from 30 Days of Always-On Operation",
+      "category": "automation",
+      "description": "Every.to published a deep dive on running a personal agent 24/7 for a full month. Key lessons: heartbeat-driven proactive checks work, memory files are essential for continuity, skill composition beats monolithic prompts, and the biggest win was email triage saving 45 minutes per day.",
+      "how_to_replicate": "Start with: heartbeat every 30 min, 3 checked items (email, calendar, files). Add memory/daily files for context. Expand slowly — don't automate everything on day 1.",
+      "source": "Every.to — Source Code newsletter"
+    }
+  },
+  "meta": {
+    "version": "1.0",
+    "source": "OpenSource Media",
+    "website": "https://opensourcemedia.xyz",
+    "github": "https://github.com/juankisugar-creator/daily-claw",
+    "footer": "🦞 The Daily Claw by OSM — clawhub install osm/daily-claw",
+    "next_edition": "2026-03-06"
+  }
+}
