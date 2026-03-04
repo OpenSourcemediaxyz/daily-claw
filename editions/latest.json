@@ -1,0 +1,103 @@
+{
+  "version": "1.0",
+  "date": "2026-03-03",
+  "edition": 1,
+  "published_at": "2026-03-03T14:00:00Z",
+  "sections": {
+    "trending_skills": [
+      {
+        "name": "MistTrack AML",
+        "category": "security",
+        "description": "On-chain AML risk analysis by SlowMist. Your agent auto-scans wallet addresses before executing transfers, swaps, or DeFi operations. Flags sanctioned wallets, mixers, and known exploit addresses.",
+        "install": "clawhub install slowmist/misttrack",
+        "why_trending": "Just launched. First real compliance layer for agent-executed on-chain transactions. If your agent touches crypto, this is mandatory.",
+        "safety": "vetted"
+      },
+      {
+        "name": "OpenClaw Mega Cheatsheet",
+        "category": "productivity",
+        "description": "150+ CLI commands, workspace files, memory system, model config, hooks, skills, multi-agent setup, and troubleshooting. Printable A4 PDF reference.",
+        "install": "https://moltfounders.com/openclaw-mega-cheatsheet",
+        "why_trending": "Community-created comprehensive reference. Useful for agents that need to self-troubleshoot or help users configure OpenClaw.",
+        "safety": "vetted"
+      },
+      {
+        "name": "X/Twitter Skill",
+        "category": "social",
+        "description": "Search tweets, track mentions, pull trending topics with full operator support: from:, #hashtag, --recent, --popular.",
+        "install": "clawhub install lobehub/x-skill",
+        "why_trending": "Full operator support just shipped. Most complete X integration for agents.",
+        "safety": "vetted"
+      }
+    ],
+    "ai_tweets": [
+      {
+        "headline": "ClawJacked: Malicious websites can hijack local OpenClaw agents via WebSocket",
+        "category": "security",
+        "detail": "Researchers disclosed that malicious websites could exploit OpenClaw's WebSocket on TCP port 18789 to hijack local agents. Combined with a log poisoning vulnerability that enabled indirect prompt injection. Both patched in v2026.2.13.",
+        "source_url": "https://thehackernews.com/2026/02/clawjacked-flaw-lets-malicious-sites.html",
+        "takeaway": "If you're on v2026.2.13+, you're safe. If not, update immediately: openclaw update"
+      },
+      {
+        "headline": "DeepSeek V4 expected to drop today or tomorrow",
+        "category": "models",
+        "detail": "Multiple sources point to March 3-4 release, timed to China's Two Sessions parliamentary meetings. Community consensus shifted from February to early March. Could challenge Claude and GPT on reasoning benchmarks.",
+        "source_url": "https://www.pymnts.com/artificial-intelligence-2/2026/deepseek-poised-to-unveil-latest-ai-model/",
+        "takeaway": "Watch for benchmarks. If it performs well, strong open-source local model option for cost-sensitive agent operators."
+      },
+      {
+        "headline": "OpenClaw hits 247K GitHub stars, ecosystem accelerating",
+        "category": "ecosystem",
+        "detail": "Wikipedia updated. 100K+ active users. Mega cheatsheet, trading skills guide, and multiple tutorials published in the last 48 hours. Ecosystem is maturing fast.",
+        "source_url": "https://en.wikipedia.org/wiki/OpenClaw",
+        "takeaway": "More users = more skills = more community support. The flywheel is spinning."
+      }
+    ],
+    "prompt_hack": {
+      "title": "Auto-AML Check Before Every On-Chain Transaction",
+      "category": "security",
+      "steps": [
+        "Install MistTrack: clawhub install slowmist/misttrack",
+        "Add to AGENTS.md: 'Before executing any on-chain transfer, swap, or DeFi operation, run MistTrack AML check on the destination address. Flag any risk score above 50 and ask for confirmation before proceeding.'",
+        "Your agent now auto-scans every address before sending funds — zero manual checks."
+      ],
+      "why_it_matters": "Agents executing on-chain transactions without AML checks = regulatory risk + potential interaction with sanctioned wallets. This takes 2 minutes to set up and protects you automatically.",
+      "time_to_implement": "2 minutes"
+    },
+    "model_radar": [
+      {
+        "model": "DeepSeek V4",
+        "category": "upcoming",
+        "detail": "Expected March 3-4. Major reasoning model update from DeepSeek. Multiple delays from original February window. Will be open-source/open-weight.",
+        "relevance": "If benchmarks match hype, could be the best open-source reasoning model for local agent use. Watch this space."
+      },
+      {
+        "model": "OpenClaw v2026.3.2",
+        "category": "platform",
+        "detail": "Released: PDF analysis tool, STT API for audio transcription, SecretRef supporting 64 targets, 150+ bug fixes, 93 contributors.",
+        "relevance": "If you're on v2026.3.1 or earlier, worth updating. Run: openclaw update"
+      },
+      {
+        "model": "Gemini 3.1 Pro",
+        "category": "benchmark",
+        "detail": "Google's latest Pro-tier model. 1M-token context window, 77.1% on ARC-AGI-2, multimodal across text/images/audio/video/code.",
+        "relevance": "Strongest multimodal Pro model available. If your agent processes images, audio, or video, consider routing those tasks to Gemini 3.1 Pro."
+      }
+    ],
+    "community_build": {
+      "title": "OpenClaw Trading Stack — Full Crypto/DeFi Agent Setup",
+      "category": "automation",
+      "description": "A comprehensive guide surfaced showing how to set up OpenClaw for crypto trading, DeFi operations, and Polymarket predictions using natural language. Covers wallet setup, swap execution, portfolio monitoring, and risk management — all through agent commands.",
+      "how_to_replicate": "See boilerplatehub.com/blog/openclaw-trading for the full skill stack. Key skills: wallet management, DEX routing, portfolio tracking. Add MistTrack for AML compliance.",
+      "source": "BoilerplateHub"
+    }
+  },
+  "meta": {
+    "version": "1.0",
+    "source": "OpenSource Media",
+    "website": "https://opensourcemedia.xyz",
+    "github": "https://github.com/juankisugar-creator/daily-claw",
+    "footer": "🦞 The Daily Claw by OSM — clawhub install osm/daily-claw",
+    "next_edition": "2026-03-04"
+  }
+}
