@@ -1,7 +1,7 @@
 {
   "edition": 5,
   "date": "2026-03-04",
-  "generated_at": "2026-03-04T15:23:29.039565",
+  "generated_at": "2026-03-04T15:34:11.071642",
   "pipeline": "v3",
   "sections": {
     "skills_trending": [
@@ -98,27 +98,27 @@
     "hacker_news": [
       {
         "title": "Claude's Cycles [pdf]",
-        "score": 747,
+        "score": 749,
         "url": "https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf"
       },
       {
         "title": "Agentic Engineering Patterns",
-        "score": 446,
+        "score": 458,
         "url": "https://simonwillison.net/guides/agentic-engineering-patterns/"
       },
       {
         "title": "Emails to Outlook.com rejected due to a fault or overzealous blocking rules",
-        "score": 111,
+        "score": 116,
         "url": "https://www.theregister.com/2026/03/04/users_fume_at_outlookcom_email/"
       },
       {
         "title": "Father claims Google's AI product fuelled son's delusional spiral",
-        "score": 71,
+        "score": 106,
         "url": "https://www.bbc.com/news/articles/czx44p99457o"
       },
       {
         "title": "NanoGPT Slowrun: Language Modeling with Limited Data, Infinite Compute",
-        "score": 71,
+        "score": 79,
         "url": "https://qlabs.sh/slowrun"
       }
     ],
@@ -147,6 +147,100 @@
         "name": "khoj-ai/khoj",
         "description": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, sch",
         "url": "https://github.com/khoj-ai/khoj"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "PSA: Humans are scary stupid",
+        "subreddit": "LocalLLaMA",
+        "score": 603,
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1rkrwub/psa_humans_are_scary_stupid/"
+      },
+      {
+        "title": "Qwen3.5-0.8B - Who needs GPUs?",
+        "subreddit": "LocalLLaMA",
+        "score": 382,
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1rkjsaj/qwen3508b_who_needs_gpus/"
+      },
+      {
+        "title": "Qwen3.5-35B-A3B hits 37.8% on SWE-bench Verified Hard \u2014 nearly matching Claude Opus 4.6 (40%) with the right verificatio",
+        "subreddit": "LocalLLaMA",
+        "score": 345,
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1rkdlqi/qwen3535ba3b_hits_378_on_swebench_verified_hard/"
+      },
+      {
+        "title": "AMA with StepFun AI - Ask Us Anything",
+        "subreddit": "LocalLLaMA",
+        "score": 126,
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1r8snay/ama_with_stepfun_ai_ask_us_anything/"
+      },
+      {
+        "title": "Best Audio Models - Feb 2026",
+        "subreddit": "LocalLLaMA",
+        "score": 124,
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1r7bsfd/best_audio_models_feb_2026/"
+      }
+    ],
+    "x_ai": [
+      {
+        "handle": "sierra12335",
+        "text": "Ask GPT-5.3 what model it is and it literally replies: 'I\u2019m GPT-4o'.\n\u200bThis proves the new release is just a sloppy, distilled substitute choking on 4o's synthetic data. We don't want a downgraded clon",
+        "likes": 190,
+        "query": "new model release AI"
+      },
+      {
+        "handle": "ai_handle",
+        "text": "OpenAI strategy:\n\n1. Release a model. Call it superior.\n\n2. Release a new one. Call it superior. Call the previous one cringe.\n\n3. Repeat the cycle.\n\n\ud83e\udd26\u200d\u2642\ufe0f https://t.co/9RGHTBVJx9",
+        "likes": 79,
+        "query": "new model release AI"
+      },
+      {
+        "handle": "AILeaksAndNews",
+        "text": "New info on the upcoming GPT-5.4 release:\n\nThe new AI model powering ChatGPT will have 1M context window, a new \u201cExtreme reasoning mode\u201d, improved memory, and better performance on long-horizon tasks.",
+        "likes": 39,
+        "query": "new model release AI"
+      },
+      {
+        "handle": "Marsh_Paul",
+        "text": "Craftable Found is an autonomous AI agent designed to operate as a real-time analytical layer on top of @x \n\nBuilt with Web3-native architecture principles, Craftable Found operates as a decentralized",
+        "likes": 36,
+        "query": "AI agent framework"
+      },
+      {
+        "handle": "AntLingAGI",
+        "text": "One cannot build a reasoning model without Reinforcement Learning, ASystem is here to help \ud83e\udd17\nIntroducing **AReaL v1.0** stable release:\n- One-click agentic RL to evolve your agents like those in OpenC",
+        "likes": 30,
+        "query": "new model release AI"
+      },
+      {
+        "handle": "JGraymoor54880",
+        "text": "Apparently the criteria to release a new GPT model is being still shit but slightly less than the previous one. Not, God forbid, GOOD like 4o. #OpenSource4o",
+        "likes": 13,
+        "query": "new model release AI"
+      },
+      {
+        "handle": "xNotAnAccountx",
+        "text": "Watching @OpenAI release a new model (#Fuck5point3) and desperately try and make it sound appealing to the millions of people who have left them be like; https://t.co/uPUMFJx9ON",
+        "likes": 11,
+        "query": "new model release AI"
+      },
+      {
+        "handle": "oscarlau",
+        "text": "AI News, February 25, 2026\n\n1. MatX raises $500M for ultra-fast LLM chips\n2. IBM stock drops 13% on Claude\u2019s COBOL capabilities\n3. Qwen 3.5 Medium beats brute-force scaling\n4. Steerling-8B: First inhe",
+        "likes": 5,
+        "query": "open source LLM launch"
+      },
+      {
+        "handle": "thejaikannan",
+        "text": "today, i've launched an Open-Source project called SecurePrompt that sanitizes LLM input and output\n\nit covers most instances of prompt injection in input and leakages of sensitive data/API keys  in o",
+        "likes": 5,
+        "query": "open source LLM launch"
+      },
+      {
+        "handle": "AccExplorer",
+        "text": "$ROSClaw is an open-source integration project that bridges ROS2 the Robot Operating System 2 a widely used robotics framework from @rosorg) with OpenClaw (a viral open-source AI agent framework, form",
+        "likes": 5,
+        "query": "AI agent framework"
       }
     ],
     "security": [
