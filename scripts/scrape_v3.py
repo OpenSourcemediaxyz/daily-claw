@@ -384,7 +384,7 @@ def scrape_x_search_authenticated():
     if not auth_token or not ct0_token:
         return {"error": "X cookies not configured", "hint": "Set X_AUTH_TOKEN and X_CT0 env vars"}
     
-    queries = ["AI agent", "OpenClaw", "DFDV solana"]
+    queries = ["AI agent framework", "OpenClaw", "LLM agent tool"]
     all_tweets = []
     
     for query in queries:

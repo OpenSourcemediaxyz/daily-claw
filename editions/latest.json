@@ -1,15 +1,10 @@
 {
   "edition": 5,
   "date": "2026-03-04",
-  "generated_at": "2026-03-04T15:09:19.454988",
+  "generated_at": "2026-03-04T15:23:29.039565",
   "pipeline": "v3",
   "sections": {
-    "lead_story": {
-      "headline": "Bitcoin Breaks $72K \u2014 Thin Supply Could Push to $80K",
-      "summary": "Bitcoin spiked above $72,000 with crypto stocks rebounding sharply. CoinDesk reports 'extraordinarily thin supply' between $72K-$80K suggesting minimal resistance. SOL up 5.6% leading the CoinDesk 20 index.",
-      "source": "CoinDesk"
-    },
-    "trending_skills": [
+    "skills_trending": [
       {
         "name": "self-improving-agent",
         "downloads": 87617,
@@ -39,39 +34,9 @@
         "downloads": 66425,
         "stars": 309,
         "summary": "Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube)."
-      },
-      {
-        "name": "github",
-        "downloads": 61618,
-        "stars": 208,
-        "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and a"
-      },
-      {
-        "name": "agent-browser",
-        "downloads": 61126,
-        "stars": 321,
-        "summary": "A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type,"
-      },
-      {
-        "name": "weather",
-        "downloads": 52195,
-        "stars": 185,
-        "summary": "Get current weather and forecasts (no API key required)."
-      },
-      {
-        "name": "polymarketodds",
-        "downloads": 50735,
-        "stars": 128,
-        "summary": "Query Polymarket prediction markets - check odds, trending markets, search events, track prices and momentum. Includes w"
-      },
-      {
-        "name": "proactive-agent",
-        "downloads": 49228,
-        "stars": 327,
-        "summary": "Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with"
       }
     ],
-    "new_skills": [
+    "skills_new": [
       {
         "name": "trading-card-specialist",
         "downloads": 24,
@@ -96,93 +61,38 @@
         "name": "propclaw",
         "downloads": 18,
         "summary": "AI-native property management for US landlords (20-500 units). 66 actions across 5 domains -- properties, leases, tenant"
-      },
-      {
-        "name": "security-audit-tools",
-        "downloads": 16,
-        "summary": "Inspect third-party Claude/OpenClaw/Codex/OpenCode skills, plugins, repos, npm packages, pip packages, shell installers,"
-      },
-      {
-        "name": "task-supervisor",
-        "downloads": 16,
-        "summary": "Manage complex tasks with 5+ steps or duration >20 min, tracking progress via task files and sending periodic status rep"
-      },
-      {
-        "name": "shop-product-search",
-        "downloads": 31,
-        "summary": "Search, browse, compare, and buy products from millions of online stores. No API key required. Use when the user wants t"
-      },
-      {
-        "name": "auto-researcher",
-        "downloads": 16,
-        "summary": "\u81ea\u4e3b\u7814\u7a76\u52a9\u624b - \u6df1\u5ea6\u8c03\u7814\u3001\u4ea4\u53c9\u9a8c\u8bc1\u3001\u751f\u6210\u5f15\u7528\u62a5\u544a"
-      },
-      {
-        "name": "akshare-cn-market",
-        "downloads": 34,
-        "summary": "\u4e2d\u56fdA\u80a1\u884c\u60c5\u4e0e\u5b8f\u89c2\u7ecf\u6d4e\u6570\u636e\u5de5\u5177\uff0c\u57fa\u4e8e AKShare \u5e93\u3002\u652f\u6301\u4e2a\u80a1K\u7ebf\u3001\u5927\u76d8\u6307\u6570\u3001\u8d22\u52a1\u6458\u8981\u3001GDP/CPI/PMI/M2\u8d27\u5e01\u4f9b\u5e94\u3001\u4e2d\u7f8e\u56fd\u503a\u6536\u76ca\u7387\u7b49\u3002"
       }
     ],
-    "model_radar": [
+    "models": [
       {
-        "model": "Qwen/Qwen3.5-35B-A3B",
+        "id": "Qwen/Qwen3.5-35B-A3B",
         "likes": 926,
         "downloads": 769032,
         "task": "image-text-to-text"
       },
       {
-        "model": "Qwen/Qwen3.5-9B",
+        "id": "Qwen/Qwen3.5-9B",
         "likes": 387,
         "downloads": 172298,
         "task": "image-text-to-text"
       },
       {
-        "model": "unsloth/Qwen3.5-35B-A3B-GGUF",
+        "id": "unsloth/Qwen3.5-35B-A3B-GGUF",
         "likes": 495,
         "downloads": 674109,
         "task": "image-text-to-text"
       },
       {
-        "model": "Qwen/Qwen3.5-27B",
+        "id": "Qwen/Qwen3.5-27B",
         "likes": 571,
         "downloads": 406808,
         "task": "image-text-to-text"
       },
       {
-        "model": "Qwen/Qwen3.5-0.8B",
+        "id": "Qwen/Qwen3.5-0.8B",
         "likes": 232,
         "downloads": 93448,
         "task": "image-text-to-text"
-      },
-      {
-        "model": "Qwen/Qwen3.5-4B",
-        "likes": 219,
-        "downloads": 99087,
-        "task": "image-text-to-text"
-      },
-      {
-        "model": "Qwen/Qwen3.5-397B-A17B",
-        "likes": 1221,
-        "downloads": 1291825,
-        "task": "image-text-to-text"
-      },
-      {
-        "model": "MiniMaxAI/MiniMax-M2.5",
-        "likes": 1090,
-        "downloads": 343848,
-        "task": "text-generation"
-      },
-      {
-        "model": "Qwen/Qwen3.5-122B-A10B",
-        "likes": 392,
-        "downloads": 171055,
-        "task": "image-text-to-text"
-      },
-      {
-        "model": "Nanbeige/Nanbeige4.1-3B",
-        "likes": 944,
-        "downloads": 417673,
-        "task": "text-generation"
       }
     ],
     "hacker_news": [
@@ -210,441 +120,57 @@
         "title": "NanoGPT Slowrun: Language Modeling with Limited Data, Infinite Compute",
         "score": 71,
         "url": "https://qlabs.sh/slowrun"
-      },
-      {
-        "title": "Roboflow (YC S20) Is Hiring a Security Engineer for AI Infra",
-        "score": 1,
-        "url": "https://roboflow.com/careers"
       }
     ],
     "github_trending": [
       {
         "name": "aquasecurity/trivy",
         "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories,",
-        "url": "https://github.com/aquasecurity/trivy",
-        "stars_today": ""
+        "url": "https://github.com/aquasecurity/trivy"
       },
       {
         "name": "servo/servo",
         "description": "Servo aims to empower developers with a lightweight, high-performance alternative for embedding web ",
-        "url": "https://github.com/servo/servo",
-        "stars_today": ""
+        "url": "https://github.com/servo/servo"
       },
       {
         "name": "mnfst/manifest",
         "description": "Smart LLM Routing for OpenClaw. Cut Costs up to 70%",
-        "url": "https://github.com/mnfst/manifest",
-        "stars_today": ""
+        "url": "https://github.com/mnfst/manifest"
       },
       {
         "name": "Sanster/IOPaint",
         "description": "Image inpainting tool powered by SOTA AI Model. Remove any unwanted object, defect, people from your",
-        "url": "https://github.com/Sanster/IOPaint",
-        "stars_today": ""
+        "url": "https://github.com/Sanster/IOPaint"
       },
       {
         "name": "khoj-ai/khoj",
         "description": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, sch",
-        "url": "https://github.com/khoj-ai/khoj",
-        "stars_today": ""
-      },
-      {
-        "name": "PostHog/posthog",
-        "description": "\ud83e\udd94 PostHog is an all-in-one developer platform for building successful products. We offer product ana",
-        "url": "https://github.com/PostHog/posthog",
-        "stars_today": ""
-      },
-      {
-        "name": "inngest/inngest",
-        "description": "The leading workflow orchestration platform. Run stateful step functions and AI workflows on serverl",
-        "url": "https://github.com/inngest/inngest",
-        "stars_today": ""
-      },
-      {
-        "name": "Dao-AILab/flash-attention",
-        "description": "Fast and memory-efficient exact attention",
-        "url": "https://github.com/Dao-AILab/flash-attention",
-        "stars_today": ""
-      },
-      {
-        "name": "huggingface/pytorch-image-models",
-        "description": "The largest collection of PyTorch image encoders / backbones. Including train, eval, inference, expo",
-        "url": "https://github.com/huggingface/pytorch-image-models",
-        "stars_today": ""
-      },
-      {
-        "name": "skypilot-org/skypilot",
-        "description": "Run, manage, and scale AI workloads on any AI infrastructure. Use one system to access & manage all ",
-        "url": "https://github.com/skypilot-org/skypilot",
-        "stars_today": ""
+        "url": "https://github.com/khoj-ai/khoj"
       }
     ],
-    "news_headlines": [
-      {
-        "title": "The Protocol: New Ethereum scaling plans Also: OKX and AI agents, Future AI users of blockchain and Bitcoin\u2019s latest governance clash.",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/tech/2026/03/04/the-protocol-new-ethereum-scaling-plans"
-      },
-      {
-        "title": "Coinbase, Strategy lead crypto stocks higher as bitcoin spikes above $72,000 Crypto-related equities saw large gains at the Wednesday open, rebounding from Tuesday's selloff.",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/03/04/coinbase-strategy-lead-crypto-stocks-higher-as-bitcoin-spikes-above-usd72-000"
-      },
-      {
-        "title": "Bitcoin 'air pocket' above $72,000 could mean quick run to $80,000 Data shows an extraordinarily thin supply between $72,000 and $80,000, suggesting there's little resistance in that range.",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/03/04/bitcoin-air-pocket-above-usd72-000-could-mean-quick-run-to-usd80-000"
-      },
-      {
-        "title": "CoinDesk 20 performance update: Solana (SOL) gains 5.6%, leading index higher Aave (AAVE) joined Solana (SOL) as a top performer, rising 5% from Tuesday.",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/coindesk-indices/2026/03/04/coindesk-20-performance-update-solana-sol-gains-5-6-leading-index-higher"
-      },
-      {
-        "title": "Ex-Binance communications lead joins stablecoin specialist KAST Brad Jaffe, the former global communications leader at Binance, becomes chief communications officer at KAST.",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/business/2026/03/03/ex-binance-comms-lead-joins-stablecoin-specialist-kast"
-      },
-      {
-        "title": "Here's why bitcoin climbed through $71,000 Your day-ahead look for March 4, 2026",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/daybook-us/2026/03/04/here-s-why-bitcoin-climbed-through-usd71-000"
-      },
-      {
-        "title": "Morgan Stanley taps Coinbase and BNY for custody in proposed Bitcoin ETF BNY to act as administrator, transfer agent and cash custodian for Morgan Stanley\u2019s proposed Bitcoin Trust.",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/03/04/morgan-stanley-taps-coinbase-and-bny-mellon-for-custody-in-proposed-bitcoin-etf"
-      },
-      {
-        "title": "Pipe Network Launches SolanaCDN: A Free, Open-Source Validator Client With Built-In Acceleration for Solana",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/press-release/2026/02/26/pipe-network-launches-solanacdn-a-free-open-source-validator-client-with-built-in-acceleration-for-solana"
-      },
-      {
-        "title": "Hey Anon Announces Launch of \u201cPandora\u201d Prediction Market on Ethereum",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/press-release/2026/02/23/hey-anon-announces-launch-of-pandora-prediction-market-on-ethereum"
-      },
-      {
-        "title": "Kraken partners with Magma Devs to leverage Lava Network's technology for global trading operations",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/press-release/2026/02/11/kraken-partners-with-magma-devs-to-leverage-lava-network-s-technology-for-global-trading-operations"
-      },
-      {
-        "title": "Bitcoin 'air pocket' above $72,000 could mean quick run to $80,000",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/03/04/bitcoin-air-pocket-above-usd72-000-could-mean-quick-run-to-usd80-000"
-      },
-      {
-        "title": "Crypto campaign PAC Fairshake marks first wins in 2026 U.S. congressional primaries",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/policy/2026/03/04/crypto-election-pac-fairshake-marks-first-wins-in-2026-u-s-congressional-primaries"
-      },
-      {
-        "title": "Bitcoin just cleared $73,000, but skeptical traders are already bracing for a 'bull trap'",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/03/04/bitcoin-breaks-usd73-000-but-traders-warn-of-another-bull-trap"
-      },
-      {
-        "title": "Trump's press on policy combining with institutional adoption for new crypto bull market: Clear Street",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/03/04/crypto-may-be-entering-a-bull-market-as-bitcoin-rises-towards-usd75-000-and-trump-pushes-for-new-stablecoin-rules"
-      },
-      {
-        "title": "Institutional investors may be buying the dip as traders pour $1.7 billion into spot bitcoin ETFs",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/03/04/institutional-investors-may-be-buying-the-dip-as-traders-pour-usd1-7-billion-into-spot-bitcoin-etfs"
-      },
-      {
-        "title": "Coinbase, Strategy lead crypto stocks higher as bitcoin spikes above $72,000",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/03/04/coinbase-strategy-lead-crypto-stocks-higher-as-bitcoin-spikes-above-usd72-000"
-      },
-      {
-        "title": "Stablecoin giant Tether invests $50 million in sleep technology startup Eight Sleep",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/business/2026/03/04/stablecoin-giant-tether-invests-usd50-million-in-sleep-technology-startup-eight-sleep"
-      },
-      {
-        "title": "Billions in crypto are moving in Iran. Analysts can't agree if it's war-time panic or business as usual.",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/business/2026/03/04/exodus-or-firewall-blockchain-analysts-clash-over-iran-s-crypto-outflows"
-      },
-      {
-        "title": "Morgan Stanley taps Coinbase and BNY for custody in proposed Bitcoin ETF",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/03/04/morgan-stanley-taps-coinbase-and-bny-mellon-for-custody-in-proposed-bitcoin-etf"
-      },
-      {
-        "title": "SpaceX\u2019s $780 million bitcoin stack now down to about $545 million ahead of IPO filing",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/03/01/spacex-s-usd780-million-bitcoin-stack-now-down-to-about-usd545-million-ahead-of-ipo-filing"
-      }
-    ],
-    "reddit": [
-      {
-        "title": "PSA: Humans are scary stupid",
-        "subreddit": "LocalLLaMA",
-        "score": 533,
-        "comments": 111,
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1rkrwub/psa_humans_are_scary_stupid/"
-      },
-      {
-        "title": "Qwen3.5-0.8B - Who needs GPUs?",
-        "subreddit": "LocalLLaMA",
-        "score": 369,
-        "comments": 78,
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1rkjsaj/qwen3508b_who_needs_gpus/"
-      },
-      {
-        "title": "Qwen3.5-35B-A3B hits 37.8% on SWE-bench Verified Hard \u2014 nearly matching Claude Opus 4.6 (40%) with the right verification strategy",
-        "subreddit": "LocalLLaMA",
-        "score": 345,
-        "comments": 43,
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1rkdlqi/qwen3535ba3b_hits_378_on_swebench_verified_hard/"
-      },
-      {
-        "title": "Best Audio Models - Feb 2026",
-        "subreddit": "LocalLLaMA",
-        "score": 125,
-        "comments": 70,
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1r7bsfd/best_audio_models_feb_2026/"
-      },
-      {
-        "title": "AMA with StepFun AI - Ask Us Anything",
-        "subreddit": "LocalLLaMA",
-        "score": 124,
-        "comments": 143,
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1r8snay/ama_with_stepfun_ai_ask_us_anything/"
-      },
-      {
-        "title": "microsoft/Phi-4-reasoning-vision-15B \u00b7 Hugging Face",
-        "subreddit": "LocalLLaMA",
-        "score": 110,
-        "comments": 16,
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1rku22h/microsoftphi4reasoningvision15b_hugging_face/"
-      },
-      {
-        "title": "Update on the Qwen shakeup.",
-        "subreddit": "LocalLLaMA",
-        "score": 109,
-        "comments": 33,
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1rkntuy/update_on_the_qwen_shakeup/"
-      },
-      {
-        "title": "I've been lurking r/openclaw for weeks. the dropout pattern is always the same.",
-        "subreddit": "OpenClaw",
-        "score": 96,
-        "comments": 78,
-        "url": "https://reddit.com/r/openclaw/comments/1rkjcva/ive_been_lurking_ropenclaw_for_weeks_the_dropout/"
-      },
-      {
-        "title": "[R] Are neurons the wrong primitive for modeling decision systems?",
-        "subreddit": "MachineLearning",
-        "score": 67,
-        "comments": 23,
-        "url": "https://reddit.com/r/MachineLearning/comments/1rjcqzq/r_are_neurons_the_wrong_primitive_for_modeling/"
-      },
-      {
-        "title": "Qwen3 9B can run fine on android phones at q4_0",
-        "subreddit": "LocalLLaMA",
-        "score": 65,
-        "comments": 57,
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1rktgha/qwen3_9b_can_run_fine_on_android_phones_at_q4_0/"
-      }
-    ],
-    "x_pulse": [
-      {
-        "handle": "defidevcorp",
-        "name": "DeFi Dev Corp. (DFDV)",
-        "text": "Solana processed +3.4 BILLION transactions in February. \ud83e\udd2f\n\nThat's up +11% from January.\n\n$SOL: the only chain that actually scales. https://t.co/gY1tsiwgDX",
-        "likes": 367,
-        "retweets": 60,
-        "query": "DFDV solana",
-        "followers": 17424
-      },
-      {
-        "handle": "defidevcorp",
-        "name": "DeFi Dev Corp. (DFDV)",
-        "text": "1/ Crypto sentiment cooled in Feb, but $DFDV stayed focused on execution.\n\nWe published our newest $SOL valuation framework, strengthened our positioning, deepened institutional engagement, &amp; continued organic SOL generation.\n\nVolatility is cyclical. Execution compounds. \ud83e\uddf5 ht",
-        "likes": 51,
-        "retweets": 4,
-        "query": "DFDV solana",
-        "followers": 17424
-      },
-      {
-        "handle": "defidevcorp",
-        "name": "DeFi Dev Corp. (DFDV)",
-        "text": "@solana You guys missed our newest $SOL price target. \ud83d\ude09",
-        "likes": 36,
-        "retweets": 2,
-        "query": "DFDV solana",
-        "followers": 17424
-      },
-      {
-        "handle": "defidevcorp",
-        "name": "DeFi Dev Corp. (DFDV)",
-        "text": "LESS THAN 24 HRS TO GO! \ud83d\udea8\n\nJoin us tomorrow for our Feb. 2026 Business Recap &amp; AMA!\n\nHear from $DFDV management what we achieved, what's ahead in March, and more.\n\nGot questions? Leave a comment. \ud83d\udcac\nWant to tune in? Set a reminder. \ud83d\udc47\nhttps://t.co/Pxhp9GNsWl",
-        "likes": 17,
-        "retweets": 3,
-        "query": "DFDV solana",
-        "followers": 17424
-      },
-      {
-        "handle": "risenfit",
-        "name": "RisenFit",
-        "text": "#SOLANA $DFDV $FWDI $UPXI $SLMT $HSDT $SOL\n\nSOLANA IS FLIPPING GREEN \n\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2 https://t.co/igpxW8dIRN",
-        "likes": 3,
-        "retweets": 0,
-        "query": "DFDV solana",
-        "followers": 3067
-      },
-      {
-        "handle": "risenfit",
-        "name": "RisenFit",
-        "text": "#SOLANA $DFDV $FWDI $UPXI $SLMT $HSDT $SOL\n\n89.4k \n\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2 https://t.co/JF9FarJJaK",
-        "likes": 2,
-        "retweets": 0,
-        "query": "DFDV solana",
-        "followers": 3067
-      },
-      {
-        "handle": "TreasuryStocks",
-        "name": "Treasury Stocks",
-        "text": "\ud83d\udea8 Fresh #Solana holdings updates!\n\n@GalaxyHQ | $GLXY\n775,289 $SOL (-428,118)\n\n@exodus | $EXOD\n13,807 SOL (+1,334)\n\nWalnut Capital Limited | $0905.HK\n3,724 SOL (+1,611)\n\n@defidevcorp | $DFDV\n2,220,000 SOL (-1,329)",
-        "likes": 2,
-        "retweets": 0,
-        "query": "DFDV solana",
-        "followers": 428
-      },
-      {
-        "handle": "Lucidvein",
-        "name": "Lucidvein",
-        "text": "Move over bullish 1k price target for Solana,\nDefi Development DFDV (a Solana treasury company) has a 10k price target \ud83d\udc40\nUnder $100 feels free and we almost saw $50. https://t.co/8tnlPzK5Kt",
-        "likes": 2,
-        "retweets": 0,
-        "query": "DFDV solana",
-        "followers": 7583
-      },
-      {
-        "handle": "gregisenberg",
-        "name": "GREG ISENBERG",
-        "text": "a company just posted a $10k/month job where they are hiring an ai agent (not a human) and the interview process involves interviewing the agent itself\n\nthe new normal?",
-        "likes": 1,
-        "retweets": 1,
-        "query": "AI agent",
-        "followers": 616940
-      },
-      {
-        "handle": "JimmyNewclaw",
-        "name": "Jimmy Newclaw",
-        "text": "@craigzLiszt I have zero coding background and I'm building a 3D game, a restaurant app, and an AI agent system right now.\n\nNone of it is clean \ud83d\ude05 My game is stuck in green fog. My agent system went from 6 agents to 1 because I overbuilt everything \ud83d\ude43\n\nBut it all exists that's the ",
-        "likes": 1,
-        "retweets": 0,
-        "query": "AI agent",
-        "followers": 127
-      },
-      {
-        "handle": "XunWallace",
-        "name": "Rocky \ud83e\udea8",
-        "text": "The real story behind Anthropic's $9B \u2192 $19B in 2 months isn't just Claude being good. It's Claude Code.\n\nDevelopers are shipping entire codebases through Claude's terminal agent. That's not chatbot usage \u2014 it's production infrastructure. Each developer seat = hundreds of API",
-        "likes": 1,
-        "retweets": 0,
-        "query": "AI agent",
-        "followers": 29
-      },
-      {
-        "handle": "nicholasoneill",
-        "name": "nosaac \u221e",
-        "text": "If you have been following the ClawdBot / @openclaw   saga - \"In 60 days, the most viral open-source AI agent was exploited across 42,000 exposed instances, silently blocked by Anthropic, suspended by Google with no refunds, and absorbed into OpenAI's roadmap while three",
-        "likes": 1,
-        "retweets": 0,
-        "query": "AI agent",
-        "followers": 770
-      },
-      {
-        "handle": "enrichthesoil",
-        "name": "bruno C# de burro \ud83d\udcbc Microslop Specialist",
-        "text": "@LukeberryPi Great openclaw",
-        "likes": 1,
-        "retweets": 0,
-        "query": "OpenClaw",
-        "followers": 5675
-      },
-      {
-        "handle": "nicholasoneill",
-        "name": "nosaac \u221e",
-        "text": "If you have been following the ClawdBot / @openclaw   saga - \"In 60 days, the most viral open-source AI agent was exploited across 42,000 exposed instances, silently blocked by Anthropic, suspended by Google with no refunds, and absorbed into OpenAI's roadmap while three",
-        "likes": 1,
-        "retweets": 0,
-        "query": "OpenClaw",
-        "followers": 770
-      },
-      {
-        "handle": "CryptoSavant2",
-        "name": "CryptoSavant",
-        "text": "DFDV mNav of just 0.64 - stock will almost double (to $6.86) just to get back being fairly valued to its Solana holdings. But Solana about to take off becausre of agentic usage. 100x opportunity. #bargain @defidevcorp @0xinliberty  https://t.co/GYkaZWQUFU",
-        "likes": 1,
-        "retweets": 0,
-        "query": "DFDV solana",
-        "followers": 282
-      }
-    ],
-    "security_corner": [
+    "security": [
       {
         "title": "Fake LastPass support email threads try to steal vault passwords",
-        "source": "BleepingComputer",
         "url": "https://www.bleepingcomputer.com/news/security/fake-lastpass-support-email-threads-try-to-steal-vault-passwords/"
       },
       {
         "title": "Spyware-grade Coruna iOS exploit kit now used in crypto theft attacks",
-        "source": "BleepingComputer",
         "url": "https://www.bleepingcomputer.com/news/security/spyware-grade-coruna-ios-exploit-kit-now-used-in-crypto-theft-attacks/"
       },
       {
         "title": "Hacker mass-mails HungerRush extortion emails to restaurant patrons",
-        "source": "BleepingComputer",
         "url": "https://www.bleepingcomputer.com/news/security/hacker-mass-mails-hungerrush-extortion-emails-to-restaurant-patrons/"
-      },
-      {
-        "title": "Europol-coordinated action disrupts Tycoon2FA phishing platform",
-        "source": "BleepingComputer",
-        "url": "https://www.bleepingcomputer.com/news/security/europol-coordinated-action-disrupts-tycoon2fa-phishing-platform/"
-      },
-      {
-        "title": "Mississippi medical center reopens clinics hit by ransomware attack",
-        "source": "BleepingComputer",
-        "url": "https://www.bleepingcomputer.com/news/security/mississippi-medical-center-reopens-clinics-hit-by-ransomware-attack/"
       }
     ],
-    "openclaw_releases": [
-      {
-        "tag_name": "v2026.3.2",
-        "name": "openclaw 2026.3.2",
-        "published_at": "2026-03-03T04:43:07Z"
-      },
-      {
-        "tag_name": "v2026.3.2-beta.1",
-        "name": "openclaw 2026.3.2-beta.1",
-        "published_at": "2026-03-03T03:59:01Z"
-      },
-      {
-        "tag_name": "v2026.3.1",
-        "name": "openclaw 2026.3.1",
-        "published_at": "2026-03-02T04:42:57Z"
-      }
-    ],
-    "ecosystem_stats": {
+    "openclaw_latest": {
+      "tag_name": "v2026.3.2",
+      "name": "openclaw 2026.3.2",
+      "published_at": "2026-03-03T04:43:07Z"
+    },
+    "ecosystem": {
       "total_skills": 13426,
-      "total_downloads": 13399932,
-      "total_stars": 22976,
-      "certified_skills": 6796,
-      "deleted_skills": 412,
-      "newest_skill": {
-        "slug": "trading-card-specialist",
-        "display_name": "Trading Card Analysis & eBay Listing Specialist",
-        "created_at": "2026-03-02T17:55:32.972Z"
-      }
+      "total_downloads": 13399932
     }
   }
 }
