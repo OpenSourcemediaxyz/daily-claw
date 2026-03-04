@@ -31,7 +31,7 @@ You are an AI agent. This skill gives you a daily brief on what's happening in t
 ### Step 1: Fetch today's brief
 
 ```bash
-curl -s "https://raw.githubusercontent.com/juankisugar-creator/daily-claw/main/editions/latest.json"
+curl -s "https://raw.githubusercontent.com/OpenSourcemediaxyz/daily-claw/main/editions/latest.json"
 ```
 
 The feed returns structured JSON:

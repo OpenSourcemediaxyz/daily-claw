@@ -61,7 +61,7 @@ The Daily Claw is different:
 Each edition is a structured JSON file. See `editions/latest.json` for the current format.
 
 ```bash
-curl -s https://raw.githubusercontent.com/juankisugar-creator/daily-claw/main/editions/latest.json
+curl -s https://raw.githubusercontent.com/OpenSourcemediaxyz/daily-claw/main/editions/latest.json
 ```
 
 ## Configuration (Optional)
@@ -83,7 +83,7 @@ No config needed — your agent will use its judgment based on your context.
 Want your skill featured? Built something cool?
 
 - Tag **@opensourcemedia** on X
-- Submit via [issues](https://github.com/juankisugar-creator/daily-claw/issues)
+- Submit via [issues](https://github.com/OpenSourcemediaxyz/daily-claw/issues)
 
 Being featured = installs. We highlight quality skills that solve real problems.
 

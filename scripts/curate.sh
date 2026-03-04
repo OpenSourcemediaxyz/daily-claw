@@ -152,7 +152,7 @@ if jq empty "$EDITIONS_DIR/$DATE.json" 2>/dev/null; then
     
     echo ""
     echo "🦞 Edition #$EDITION published for $DATE"
-    echo "   Feed: https://raw.githubusercontent.com/juankisugar-creator/daily-claw/main/editions/latest.json"
+    echo "   Feed: https://raw.githubusercontent.com/OpenSourcemediaxyz/daily-claw/main/editions/latest.json"
 else
     echo "  ❌ Invalid JSON! Check $EDITIONS_DIR/$DATE.json"
     exit 1
