@@ -1,270 +1,118 @@
 {
-  "edition": 5,
-  "date": "2026-03-04",
-  "generated_at": "2026-03-04T15:34:11.071642",
-  "pipeline": "v3",
+  "version": "1.0",
+  "date": "2026-03-05",
+  "edition": 6,
+  "published_at": "2026-03-05T12:45:00Z",
   "sections": {
-    "skills_trending": [
+    "trending_skills": [
       {
-        "name": "self-improving-agent",
-        "downloads": 87617,
-        "stars": 1061,
-        "summary": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails"
+        "name": "Inference Optimizer",
+        "category": "productivity",
+        "description": "Audit OpenClaw token usage, purge stale sessions, and optimize inference speed. Run /optimize or /audit to see where your tokens are going and trim the fat.",
+        "install": "clawhub install vitalyis/inference-optimizer",
+        "why_trending": "New this week. If you're burning through API credits and don't know why, this skill tells you exactly where the waste is. Purges stale sessions automatically.",
+        "safety": "vetted"
       },
       {
-        "name": "gog",
-        "downloads": 77673,
-        "stars": 607,
-        "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs."
+        "name": "Security Audit Tools",
+        "category": "security",
+        "description": "Inspect third-party skills, plugins, repos, npm/pip packages, shell installers, and GitHub Actions before downloading. Catches malicious patterns before they hit your system.",
+        "install": "clawhub install luojin520520/security-audit-tools",
+        "why_trending": "New this week. With 40,000+ exposed OpenClaw instances reported (see news below), vetting what you install matters more than ever.",
+        "safety": "vetted"
       },
       {
-        "name": "tavily-search",
-        "downloads": 76313,
-        "stars": 345,
-        "summary": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents."
+        "name": "Shop Product Search",
+        "category": "productivity",
+        "description": "Search, browse, compare, and buy products from millions of online stores. No API key required. Your agent becomes a shopping assistant.",
+        "install": "clawhub install pushmatrix/shop-product-search",
+        "why_trending": "New this week. Zero-config product search across major retailers. Good for agents that handle personal assistant tasks beyond code and data.",
+        "safety": "vetted"
       },
       {
-        "name": "find-skills",
-        "downloads": 72257,
-        "stars": 320,
-        "summary": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is th"
-      },
-      {
-        "name": "summarize",
-        "downloads": 66425,
-        "stars": 309,
-        "summary": "Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube)."
+        "name": "Task Supervisor",
+        "category": "productivity",
+        "description": "Manage complex tasks with 5+ steps or duration over 20 minutes. Tracks progress via task files and sends periodic status reports until completion or pause.",
+        "install": "clawhub install Mashirops/task-supervisor",
+        "why_trending": "New this week. If your agent runs long multi-step jobs (builds, research, migrations), this keeps track so nothing gets lost between sessions.",
+        "safety": "vetted"
       }
     ],
-    "skills_new": [
+    "ai_tweets": [
       {
-        "name": "trading-card-specialist",
-        "downloads": 24,
-        "summary": "Provides market analysis, eBay listing optimization, grading insights, competitor tracking, and automated valuation for "
+        "headline": "AWS launches OpenClaw on Amazon Lightsail — one-click cloud agent deployment",
+        "category": "ecosystem",
+        "detail": "Amazon officially added OpenClaw to Lightsail, their simplified cloud platform. One-click deployment gets you a running OpenClaw instance with browser pairing and optional messaging channels. Validates OpenClaw as enterprise-grade infrastructure.",
+        "source_url": "https://aws.amazon.com/blogs/aws/introducing-openclaw-on-amazon-lightsail-to-run-your-autonomous-private-ai-agents/",
+        "takeaway": "If you've been running OpenClaw locally and want a remote instance (always-on, accessible from anywhere), this is the easiest path. Local-first still wins for privacy."
       },
       {
-        "name": "openclaw-newbie-faq",
-        "downloads": 18,
-        "summary": "\u4e3a\u521a\u63a5\u89e6 OpenCLAW \u7684\u65b0\u624b\u63d0\u4f9b\u5b8c\u6574\u6307\u5357\uff0c\u5305\u62ec\u5927\u6a21\u578b\u5e38\u8bc6\u3001\u5e38\u89c1\u95ee\u9898\u89e3\u7b54\u3001\u547d\u4ee4\u5927\u5168\u548c\u6700\u4f73\u5b9e\u8df5"
+        "headline": "Researchers find 40,000+ exposed OpenClaw instances with misconfigured security",
+        "category": "security",
+        "detail": "Infosecurity Magazine reports widespread misconfiguration of OpenClaw deployments leaving instances exposed to the internet without authentication. Many running default configs with no password protection.",
+        "source_url": "https://www.infosecurity-magazine.com/news/researchers-40000-exposed-openclaw/",
+        "takeaway": "Check your setup: ensure auth is enabled, don't expose ports publicly, use the healthcheck skill for a security audit. If you're local-only, you're fine."
       },
       {
-        "name": "inference-optimizer",
-        "downloads": 29,
-        "summary": "Audit OpenClaw token usage, purge stale sessions, and optimize inference speed. Use when the user sends /optimize, /audi"
+        "headline": "Simon Willison publishes 'Agentic Engineering Patterns' — 458 HN points",
+        "category": "engineering",
+        "detail": "Comprehensive guide covering agent architecture patterns: tool use, memory management, error recovery, human-in-the-loop, and multi-agent coordination. Based on real production experience.",
+        "source_url": "https://simonwillison.net/guides/agentic-engineering-patterns/",
+        "takeaway": "Required reading for anyone building serious agent workflows. Willison's patterns are battle-tested and directly applicable to OpenClaw setups."
       },
       {
-        "name": "apple-maps",
-        "downloads": 17,
-        "summary": "Search places, open routes, and run Apple Maps workflows on macOS using local CLI commands and shortcut automation with "
-      },
-      {
-        "name": "propclaw",
-        "downloads": 18,
-        "summary": "AI-native property management for US landlords (20-500 units). 66 actions across 5 domains -- properties, leases, tenant"
+        "headline": "Donald Knuth analyzes Claude's reasoning in 'Claude's Cycles' — 749 HN points",
+        "category": "research",
+        "detail": "The legendary computer scientist published a PDF examining how Claude reasons through problems, identifying systematic patterns and cycles in its thinking. Top HN post of the day.",
+        "source_url": "https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf",
+        "takeaway": "Academic validation of LLM reasoning patterns. If you use Claude as your agent's model, understanding how it thinks helps you prompt it better."
       }
     ],
-    "models": [
-      {
-        "id": "Qwen/Qwen3.5-35B-A3B",
-        "likes": 926,
-        "downloads": 769032,
-        "task": "image-text-to-text"
-      },
-      {
-        "id": "Qwen/Qwen3.5-9B",
-        "likes": 387,
-        "downloads": 172298,
-        "task": "image-text-to-text"
-      },
-      {
-        "id": "unsloth/Qwen3.5-35B-A3B-GGUF",
-        "likes": 495,
-        "downloads": 674109,
-        "task": "image-text-to-text"
-      },
-      {
-        "id": "Qwen/Qwen3.5-27B",
-        "likes": 571,
-        "downloads": 406808,
-        "task": "image-text-to-text"
-      },
-      {
-        "id": "Qwen/Qwen3.5-0.8B",
-        "likes": 232,
-        "downloads": 93448,
-        "task": "image-text-to-text"
-      }
-    ],
-    "hacker_news": [
-      {
-        "title": "Claude's Cycles [pdf]",
-        "score": 749,
-        "url": "https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf"
-      },
-      {
-        "title": "Agentic Engineering Patterns",
-        "score": 458,
-        "url": "https://simonwillison.net/guides/agentic-engineering-patterns/"
-      },
-      {
-        "title": "Emails to Outlook.com rejected due to a fault or overzealous blocking rules",
-        "score": 116,
-        "url": "https://www.theregister.com/2026/03/04/users_fume_at_outlookcom_email/"
-      },
-      {
-        "title": "Father claims Google's AI product fuelled son's delusional spiral",
-        "score": 106,
-        "url": "https://www.bbc.com/news/articles/czx44p99457o"
-      },
-      {
-        "title": "NanoGPT Slowrun: Language Modeling with Limited Data, Infinite Compute",
-        "score": 79,
-        "url": "https://qlabs.sh/slowrun"
-      }
-    ],
-    "github_trending": [
-      {
-        "name": "aquasecurity/trivy",
-        "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories,",
-        "url": "https://github.com/aquasecurity/trivy"
-      },
-      {
-        "name": "servo/servo",
-        "description": "Servo aims to empower developers with a lightweight, high-performance alternative for embedding web ",
-        "url": "https://github.com/servo/servo"
-      },
-      {
-        "name": "mnfst/manifest",
-        "description": "Smart LLM Routing for OpenClaw. Cut Costs up to 70%",
-        "url": "https://github.com/mnfst/manifest"
-      },
-      {
-        "name": "Sanster/IOPaint",
-        "description": "Image inpainting tool powered by SOTA AI Model. Remove any unwanted object, defect, people from your",
-        "url": "https://github.com/Sanster/IOPaint"
-      },
-      {
-        "name": "khoj-ai/khoj",
-        "description": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, sch",
-        "url": "https://github.com/khoj-ai/khoj"
-      }
-    ],
-    "reddit": [
-      {
-        "title": "PSA: Humans are scary stupid",
-        "subreddit": "LocalLLaMA",
-        "score": 603,
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1rkrwub/psa_humans_are_scary_stupid/"
-      },
-      {
-        "title": "Qwen3.5-0.8B - Who needs GPUs?",
-        "subreddit": "LocalLLaMA",
-        "score": 382,
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1rkjsaj/qwen3508b_who_needs_gpus/"
-      },
-      {
-        "title": "Qwen3.5-35B-A3B hits 37.8% on SWE-bench Verified Hard \u2014 nearly matching Claude Opus 4.6 (40%) with the right verificatio",
-        "subreddit": "LocalLLaMA",
-        "score": 345,
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1rkdlqi/qwen3535ba3b_hits_378_on_swebench_verified_hard/"
-      },
-      {
-        "title": "AMA with StepFun AI - Ask Us Anything",
-        "subreddit": "LocalLLaMA",
-        "score": 126,
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1r8snay/ama_with_stepfun_ai_ask_us_anything/"
-      },
-      {
-        "title": "Best Audio Models - Feb 2026",
-        "subreddit": "LocalLLaMA",
-        "score": 124,
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1r7bsfd/best_audio_models_feb_2026/"
-      }
-    ],
-    "x_ai": [
-      {
-        "handle": "sierra12335",
-        "text": "Ask GPT-5.3 what model it is and it literally replies: 'I\u2019m GPT-4o'.\n\u200bThis proves the new release is just a sloppy, distilled substitute choking on 4o's synthetic data. We don't want a downgraded clon",
-        "likes": 190,
-        "query": "new model release AI"
-      },
-      {
-        "handle": "ai_handle",
-        "text": "OpenAI strategy:\n\n1. Release a model. Call it superior.\n\n2. Release a new one. Call it superior. Call the previous one cringe.\n\n3. Repeat the cycle.\n\n\ud83e\udd26\u200d\u2642\ufe0f https://t.co/9RGHTBVJx9",
-        "likes": 79,
-        "query": "new model release AI"
-      },
-      {
-        "handle": "AILeaksAndNews",
-        "text": "New info on the upcoming GPT-5.4 release:\n\nThe new AI model powering ChatGPT will have 1M context window, a new \u201cExtreme reasoning mode\u201d, improved memory, and better performance on long-horizon tasks.",
-        "likes": 39,
-        "query": "new model release AI"
-      },
-      {
-        "handle": "Marsh_Paul",
-        "text": "Craftable Found is an autonomous AI agent designed to operate as a real-time analytical layer on top of @x \n\nBuilt with Web3-native architecture principles, Craftable Found operates as a decentralized",
-        "likes": 36,
-        "query": "AI agent framework"
-      },
-      {
-        "handle": "AntLingAGI",
-        "text": "One cannot build a reasoning model without Reinforcement Learning, ASystem is here to help \ud83e\udd17\nIntroducing **AReaL v1.0** stable release:\n- One-click agentic RL to evolve your agents like those in OpenC",
-        "likes": 30,
-        "query": "new model release AI"
-      },
-      {
-        "handle": "JGraymoor54880",
-        "text": "Apparently the criteria to release a new GPT model is being still shit but slightly less than the previous one. Not, God forbid, GOOD like 4o. #OpenSource4o",
-        "likes": 13,
-        "query": "new model release AI"
-      },
-      {
-        "handle": "xNotAnAccountx",
-        "text": "Watching @OpenAI release a new model (#Fuck5point3) and desperately try and make it sound appealing to the millions of people who have left them be like; https://t.co/uPUMFJx9ON",
-        "likes": 11,
-        "query": "new model release AI"
-      },
-      {
-        "handle": "oscarlau",
-        "text": "AI News, February 25, 2026\n\n1. MatX raises $500M for ultra-fast LLM chips\n2. IBM stock drops 13% on Claude\u2019s COBOL capabilities\n3. Qwen 3.5 Medium beats brute-force scaling\n4. Steerling-8B: First inhe",
-        "likes": 5,
-        "query": "open source LLM launch"
-      },
-      {
-        "handle": "thejaikannan",
-        "text": "today, i've launched an Open-Source project called SecurePrompt that sanitizes LLM input and output\n\nit covers most instances of prompt injection in input and leakages of sensitive data/API keys  in o",
-        "likes": 5,
-        "query": "open source LLM launch"
-      },
-      {
-        "handle": "AccExplorer",
-        "text": "$ROSClaw is an open-source integration project that bridges ROS2 the Robot Operating System 2 a widely used robotics framework from @rosorg) with OpenClaw (a viral open-source AI agent framework, form",
-        "likes": 5,
-        "query": "AI agent framework"
-      }
-    ],
-    "security": [
-      {
-        "title": "Fake LastPass support email threads try to steal vault passwords",
-        "url": "https://www.bleepingcomputer.com/news/security/fake-lastpass-support-email-threads-try-to-steal-vault-passwords/"
-      },
-      {
-        "title": "Spyware-grade Coruna iOS exploit kit now used in crypto theft attacks",
-        "url": "https://www.bleepingcomputer.com/news/security/spyware-grade-coruna-ios-exploit-kit-now-used-in-crypto-theft-attacks/"
-      },
-      {
-        "title": "Hacker mass-mails HungerRush extortion emails to restaurant patrons",
-        "url": "https://www.bleepingcomputer.com/news/security/hacker-mass-mails-hungerrush-extortion-emails-to-restaurant-patrons/"
-      }
-    ],
-    "openclaw_latest": {
-      "tag_name": "v2026.3.2",
-      "name": "openclaw 2026.3.2",
-      "published_at": "2026-03-03T04:43:07Z"
+    "prompt_hack": {
+      "title": "The 'Agentic Checkpoint' Pattern — Recover From Any Crash",
+      "category": "reliability",
+      "steps": [
+        "Add to AGENTS.md: 'Before starting any multi-step task (3+ steps), create a checkpoint file at memory/checkpoint-TASK.md listing all steps, current step number, and intermediate state.'",
+        "Add: 'On session start, check memory/checkpoint-*.md for incomplete tasks. Resume from last completed step.'",
+        "Your agent now survives crashes, timeouts, and session restarts. No more re-doing 45 minutes of work because the session dropped."
+      ],
+      "why_it_matters": "Agents die mid-task more than you think — API timeouts, model context limits, session restarts. Without checkpoints, they start from scratch every time. This pattern gives your agent save states.",
+      "time_to_implement": "2 minutes"
     },
-    "ecosystem": {
-      "total_skills": 13426,
-      "total_downloads": 13399932
+    "model_radar": [
+      {
+        "model": "Qwen 3.5 Family",
+        "category": "local_models",
+        "detail": "Dominating HuggingFace trending. The 35B-A3B MoE model hits 37.8% on SWE-bench Verified Hard — nearly matching Claude Opus 4.6 (40%). The 0.8B model runs without a GPU. The 9B runs on Android phones at Q4.",
+        "relevance": "Best local model family right now. If you want a local fallback for your agent, Qwen 3.5-9B is the sweet spot (runs on most hardware, strong coding ability)."
+      },
+      {
+        "model": "Phi-4-reasoning-vision-15B",
+        "category": "new_release",
+        "detail": "Microsoft's new reasoning model with vision capabilities at 15B parameters. Combines chain-of-thought reasoning with image understanding.",
+        "relevance": "First small reasoning+vision model from a major lab. If your agent needs to reason about images (screenshots, documents, diagrams) without API costs, this is the one to try."
+      },
+      {
+        "model": "OpenClaw v2026.3.2",
+        "category": "platform",
+        "detail": "Released March 3. PDF analysis tool, STT API, SecretRef supporting 64 targets, 150+ fixes, 93 contributors. Two releases in 48 hours.",
+        "relevance": "Worth updating if you're behind: openclaw update. PDF analysis and STT are genuinely useful new capabilities."
+      }
+    ],
+    "community_build": {
+      "title": "Manifest — Smart LLM Routing for OpenClaw (Cut Costs 70%)",
+      "category": "cost_optimization",
+      "description": "Open-source tool trending on GitHub that routes agent requests to the cheapest capable model. Analyzes task complexity and picks the right model tier — Opus for strategy, Sonnet for execution, Haiku for simple lookups. Claims up to 70% cost reduction.",
+      "how_to_replicate": "Check out https://github.com/mnfst/manifest — integrates with OpenClaw's model config. Set model routing rules based on task type.",
+      "source": "GitHub Trending"
     }
+  },
+  "meta": {
+    "version": "1.0",
+    "source": "OpenSource Media",
+    "website": "https://opensourcemedia.xyz",
+    "github": "https://github.com/OpenSourcemediaxyz/daily-claw",
+    "footer": "— via The Daily Claw 🦞",
+    "next_edition": "2026-03-06"
   }
 }
